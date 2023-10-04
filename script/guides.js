@@ -1,5 +1,7 @@
 const carouselEl = document.querySelector("#image-carousel")
-const pictureEl = document.querySelector(".carousel-wrapper")
+const figureEl = document.querySelector("picture.carousel-wrapper figure")
+const buttons = document.querySelectorAll(`#image-carousel button`)
+const figcaptionEl = document.querySelector("#image-carousel figcaption")
 
 //TODO ////////////////////////////////////////
 
@@ -13,61 +15,76 @@ const select = document.querySelector("select.navBtn")
 
 
     window.addEventListener("click",(e)=> {
+
+        let count = 0
         const target = e.target
 
             //** KULLANIM KILAVUZU BUTONLARA TIKLADĞINDA BİLGİ FOTORAFLARINI GÖSTERMEK */
-            if(target.dataset.imgs) {
-                    e.preventDefault()
+                if(target.dataset.imgs) {
+                        e.preventDefault()
 
                 //** BUTONLARA KAYITLI IMG URL DATALARINDAN ARRAY OLUŞTURMAK */
-                const data = target.dataset.imgs.split(",")
+                    const data = target.dataset.imgs.split(",")
 
                     //** IMG CAROUSEL'İ GÖRÜNTÜLEMEK */
-                    carouselEl.classList.add("visible")
+                        carouselEl.classList.add("visible")
 
                     //** ARRAY'DAKİ DATADAN PİCTURE ELEMENTİNİN İÇİNİ OLUŞTURMAK */
-                    pictureEl.innerHTML = data.map((item,i)=>{
-                        return `
-                        <figure id="${i+1}" >
-                            <img src="${item}" alt="">
-                        </figure>
-                        `
-                    }).join("")
+                        figureEl.innerHTML = data.map((item,i)=>{
+                            return `
+                                <img id="${i+1}" src="${item}" alt="">
+                            `
+                        }).join("")
 
-                const figureEls = document.querySelectorAll("#image-carousel figure")
+                    const imgs = document.querySelectorAll("#image-carousel figure img")
 
-                    //** İLK GÖRÜNTÜLENCEK IMAGE'İ AYARLAMAK */
-                    figureEls[0].classList.add("visible")
+                        //** İLK GÖRÜNTÜLENCEK IMAGE'İ AYARLAMAK */
+                            imgs[0].classList.add("visible")
 
+                    //** IMAGE TAKIP CIRCLE'LARINI AYARLAMAK */
+                        figcaptionEl.innerHTML = data.map((item,i)=>{
+                            return `
+                                <i id="${i}" class="fa-regular fa-circle"></i>
+                            `
+                        }).join("")
 
-                let count = 0
-                const buttons = document.querySelectorAll(`#image-carousel button`)
+                    const iconEls = document.querySelectorAll("#image-carousel i")
+
+                        //** ILK CIRCLE'Yİ SOLİD YAPMAK */
+                            iconEls[count].className = "fa-solid fa-circle active"
+            
                     buttons.forEach(btn=>btn.addEventListener("click",()=> {
 
                         //** CLOSE BUTON FONKSİYONU */
-                        if(btn.classList.contains("closeBtn")) carouselEl.classList.remove("visible")
+                            if(btn.classList.contains("closeBtn")) carouselEl.classList.remove("visible")
 
                         //** RİGHT BUTON FONKSİYONU */
-                        if(btn.classList.contains("rightBtn") && count != data.length-1) {
-                            count++
-                            figureEls.forEach(el=>el.classList.remove("visible"))
-                            figureEls[count].classList.add("visible")    
-                        }
+                            if(btn.classList.contains("rightBtn") && count != data.length-1) {
+                                count++
+                                adjustImages(imgs,count)
+
+                                //** KAÇINCI RESİM GÖRÜNTÜLENİYORSA, O CIRCLE'Yİ SOLİD YAPMAK */
+                                        adjustCircles(iconEls,count)
+                            }
 
                         //** LEFT BUTON FONKSİYONU */
-                        if(btn.classList.contains("leftBtn") && count!=0) {
-                            count--
-                            figureEls.forEach(el=>el.classList.remove("visible"))
-                            figureEls[count].classList.add("visible") 
-                        }
-                    }))                    
-            }
-            
-            // else {
-            //     carouselEl.classList.remove("visible")
-            // }
+                            if(btn.classList.contains("leftBtn") && count!=0) {
+                                count--
+                                adjustImages(imgs,count)
 
+                                //** KAÇINCI RESİM GÖRÜNTÜLENİYORSA, O CIRCLE'Yİ SOLİD YAPMAK */
+                                    adjustCircles(iconEls,count)
+                            }
+                    }))
 
+                    //** KAÇINCI CIRCLE'A BASARSAN O FOTOYA GİTMEK */
+                        iconEls.forEach(icon=> icon.addEventListener("click",(e)=>{
+                            iconId = e.target.id
+                            adjustImages(imgs,iconId)
+                            adjustCircles(iconEls,iconId)
+                            count = iconId
+                        }))
+                }
     })
 
     //TODO ////////////////////////////////////////
@@ -86,6 +103,22 @@ const select = document.querySelector("select.navBtn")
         console.log(e.target.value);
         window.location = `#${e.target.value}`
     })
+
+
+
+
+// FONKSİYONLAR
+
+function adjustImages(imgs,count) {
+    imgs.forEach(el=>el.classList.remove("visible"))
+    imgs[count].classList.add("visible")
+}
+
+function adjustCircles(iconEls,count) {
+    iconEls.forEach(icon=>icon.className = "fa-regular fa-circle")
+    iconEls[count].className = "fa-solid fa-circle active"
+}
+    
 
 
 
