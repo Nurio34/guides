@@ -1,20 +1,29 @@
+const carouselEl = document.querySelector("#image-carousel")
+const pictureEl = document.querySelector(".carousel-wrapper")
+
+//TODO ////////////////////////////////////////
+
+const infoImgsBtns = document.querySelectorAll(".infoImgsBtn")
+
+//TODO ////////////////////////////////////////
+
+const select = document.querySelector("select.navBtn")
+
+
+
 
     window.addEventListener("click",(e)=> {
-        const carouselEl = document.querySelector("#image-carousel")
         const target = e.target
 
             //** KULLANIM KILAVUZU BUTONLARA TIKLADĞINDA BİLGİ FOTORAFLARINI GÖSTERMEK */
             if(target.dataset.imgs) {
                     e.preventDefault()
 
-                    //** BUTONLARA KAYITLI IMG URL DATALARINDAN ARRAY OLUŞTURMAK */
-                    const data = target.dataset.imgs.split(",")
+                //** BUTONLARA KAYITLI IMG URL DATALARINDAN ARRAY OLUŞTURMAK */
+                const data = target.dataset.imgs.split(",")
 
                     //** IMG CAROUSEL'İ GÖRÜNTÜLEMEK */
                     carouselEl.classList.add("visible")
-
-
-                const pictureEl = document.querySelector(".carousel-wrapper")
 
                     //** ARRAY'DAKİ DATADAN PİCTURE ELEMENTİNİN İÇİNİ OLUŞTURMAK */
                     pictureEl.innerHTML = data.map((item,i)=>{
@@ -60,3 +69,24 @@
 
 
     })
+
+    //TODO ////////////////////////////////////////
+
+
+    //** BUTONLARA BASILDIĞINDA CLASS'LARINI AYARLAMAK */
+    infoImgsBtns.forEach(btn=> btn.addEventListener("click",()=>{
+        
+        infoImgsBtns.forEach(btn => btn.classList.remove("active"))
+        btn.classList.add("active","clicked")
+    }))
+
+    //TODO ////////////////////////////////////////
+
+    select.addEventListener("input",(e)=> {
+        console.log(e.target.value);
+        window.location = `#${e.target.value}`
+    })
+
+
+
+

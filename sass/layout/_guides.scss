@@ -25,131 +25,161 @@
 }
 
 body.guides {
+    
+    header {
+        min-height: 56px;
 
-    picture {
-        display: grid;
-        gap: 2rem;
-        justify-content: start;
-    
-        padding: 2rem;
-    
-            figure {
-                box-shadow: var(--box-shadow-1);
-                display: flex;
-    
-                figcaption {
-                    align-self: center;
+        nav {
+            position: fixed;
+            width: 100%;
+            height: 56px;
+            background-color: lightgray;
+            padding: 0.2rem 0.6rem;
+
+            display: flex;
+
+            .navBtn {
+                padding: 1rem;
+                background-color: rgb(253, 31, 253);
+                color: white;
+            }
+
+            a.navBtn {
+                margin-inline-start: auto;
+            }
+        }
+    }
+
+    main {
+        padding-top: 1rem;
+
+        picture.banner {
+            display: grid;
+            gap: 2rem;
+            justify-content: start;
+            padding-left: 1rem;
+                
+                figure {
                     box-shadow: var(--box-shadow-1);
-                    margin: 2rem;
-                    padding: 2rem;
-                    height: calc(100% - 4rem);
-                    min-width: calc(20% - 4rem);
+                    display: flex;
+                    padding-top: 56px;
+        
+                    figcaption {
+                        align-self: center;
+                        box-shadow: var(--box-shadow-1);
+                        margin: 2rem;
+                        padding: 2rem;
+                        height: calc(100% - 4rem);
+                        min-width: calc(20% - 4rem);
+        
+                        ul {
+                            list-style-type: disc;
+                            display: grid;
+                            gap: 0.2rem;
+                            li {
+        
+                                button.infoImgsBtn {
+                                    padding: 0.2rem 0.4rem;
+                                    color: greenyellow;
+                                    background-color: black;
+                                    cursor: pointer;
     
-                    ul {
-                        list-style-type: disc;
-                        display: grid;
-                        gap: 0.2rem;
-                        li {
-    
-                            a {
-                                padding: 0.2rem 0.4rem;
-                                color: greenyellow;
-                                background-color: black;
-                                cursor: pointer;
+                                    &.clicked {
+                                        color: blue;
+                                        background-color: gray;
+                                    }
+                                    
+                                    &.active {
+                                        color: purple;
+                                        background-color: lightgray;
+                                    }
+                                }
                             }
                         }
                     }
                 }
-            }
-    }
-    
-    #image-carousel {
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(128, 128, 128,0.6);
-        z-index: -1;
-        opacity: 0;
-        transform: translateX(10%);
-        transition: 0.2s;
-    
-        &.visible {
-            z-index: 1;
-            opacity: 1;
-            transform: translateX(0);
         }
-    
-        .container {
-            position: absolute;
-            top: 50%; left: 50%; transform: translate(-50%,-50%);
-            width: 70%;
-            height: 98%;
-    
-            button {
+        
+        #image-carousel {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(128, 128, 128,0.6);
+            z-index: -1;
+            opacity: 0;
+            transform: translateX(10%);
+            transition: 0.2s;
+        
+            &.visible {
+                z-index: 1;
+                opacity: 1;
+                transform: translateX(0);
+            }
+        
+            .container {
                 position: absolute;
-                top: 50%; left:-10%; transform: translateY(-50%);
-                width: 3vw;
-                aspect-ratio: 1;
-                border-radius: 50%;
-            }
-    
-            button:first-of-type {
-                top: 0; transform: translateY(0);
-                left: unset;
-                right: -10%;
-            }
-    
-            button:last-of-type {
-                right: -10%;
-                left: unset;
-            }
-    
-            .wrapper {
-                width: 100%;
-                height: 100%;
-                background: white;
-    
-                picture {
-                    position: relative;
-                    
+                top: 50%; left: 50%; transform: translate(-50%,-50%);
+                width: 70%;
+                height: 98%;
+        
+                button {
+                    position: absolute;
+                    top: 50%; left:-10%; transform: translateY(-50%);
+                    width: 3vw;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                }
+        
+                button:first-of-type {
+                    top: 0; transform: translateY(0);
+                    left: unset;
+                    right: -10%;
+                }
+        
+                button:last-of-type {
+                    right: -10%;
+                    left: unset;
+                }
+        
+                .wrapper {
                     width: 100%;
                     height: 100%;
-    
-                    display: grid;
-                    place-items: center;
-                    isolation: isolate;
-    
-                    figure {
-                        position: absolute;
-                        opacity: 0;
+                    background: white;
+        
+                    picture {
+                        position: relative;
+                        
+                        width: 100%;
+                        height: 100%;
+        
                         display: grid;
                         place-items: center;
-                        transition: 0.2s;
-                        max-width: 90%;
-
+                        isolation: isolate;
+        
+                        figure {
+                            position: absolute;
+                            opacity: 0;
+                            display: grid;
+                            place-items: center;
+                            transition: 0.2s;
+                            max-width: 90%;
     
-                        &.visible {
-                            opacity: 1;
-                        }
-
-                        img {
-                            max-height: 95vh;
+        
+                            &.visible {
+                                opacity: 1;
+                            }
+    
+                            img {
+                                max-height: 95vh;
+                            }
                         }
                     }
                 }
+        
+        
             }
-    
-    
         }
-    }
-
-    #toBack {
-        position: fixed;
-        top: 0; right: 0;
-        padding: 1rem;
-        background-color: rgb(253, 31, 253);
-        color: white;
     }
 }
 
