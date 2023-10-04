@@ -68,6 +68,7 @@ body.guides {
                         align-self: center;
                         box-shadow: var(--box-shadow-1);
                         margin: 2rem;
+                        margin-inline-start: auto;
                         padding: 2rem;
                         height: calc(100% - 4rem);
                         min-width: calc(20% - 4rem);
@@ -189,7 +190,7 @@ body.guides {
                             i {
                                 transition: 0.2s;
                                 cursor: pointer;
-                                
+
                                 &.active {
                                     font-size: 1.2rem;
                                 }
