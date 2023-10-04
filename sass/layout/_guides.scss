@@ -188,7 +188,8 @@ body.guides {
 
                             i {
                                 transition: 0.2s;
-
+                                cursor: pointer;
+                                
                                 &.active {
                                     font-size: 1.2rem;
                                 }
