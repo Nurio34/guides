@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>NAME</title>
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLImBIFagyGDnIb0RgBj6fkdChAtKjZTQR_a78lVL1g&s" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../css/style.min.css">
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLImBIFagyGDnIb0RgBj6fkdChAtKjZTQR_a78lVL1g&s"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.min.css" />
 
-    <link rel="stylesheet" href="https://kit.fontawesome.com/b69fb5b7db.css" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/b69fb5b7db.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/b69fb5b7db.css"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b69fb5b7db.js"
+      crossorigin="anonymous"
+    ></script>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- <link rel="canonical" href="NAME">
     <meta name="description" content="NAME">
@@ -25,216 +37,729 @@
     <meta name="og" content="NAME"> -->
 
     <!-- <base href="127.0.0.1:5500/"> -->
+  </head>
 
-</head>
-
-
-    
-
-<body class="guides">
-
+  <body title="body" class="guides">
     <header>
+      <nav id="navBar">
+        <select class="navBtn" name="goTo" id="goTo">
+          <option value="basic">Basic</option>
+          <option value="semantics">Semantics</option>
+          <option value="links">Links</option>
+          <option value="lists">Lists</option>
+          <option value="formatting">Formatting</option>
+          <option value="forms&input">Forms & Input</option>
+          <option value="images">Images</option>
+          <option value="audio&video">Audio & Video</option>
+          <option value="frames">Frames</option>
+        </select>
 
-        <nav>
-
-            <select class="navBtn" name="goTo" id="goTo">
-                    <option value="basic">Basic</option>
-                    <option value="semantics">Semantics</option>
-                    <option value="links">Links</option>
-                    <option value="lists">Lists</option>
-                    <option value="formatting">Formatting</option>
-                    <option value="forms&input">Forms & Input</option>
-                    <option value="images">Images</option>
-                    <option value="audio&video">Audio & Video</option>
-                    <option value="frames">Frames</option>
-            </select>
-
-            <a class="navBtn" href="../index.html">Back</a>
-
-        </nav>
-
+        <a class="navBtn" href="../index.html">Back</a>
+      </nav>
     </header>
 
     <main>
+      <picture class="banner">
+        <figure id="basic">
+          <img
+            src="../images/semantic/basic.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/heading0.png,../images/semantic/heading01.jpg,../images/semantic/heading1.png"
+                >
+                  &lt;h1&gt; to &lt;h6&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/p0.png,../images/semantic/p01.jpg,../images/semantic/p1.png"
+                >
+                  &lt;p&gt; kullanımı
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-        <picture class="banner">
+        <figure id="semantics">
+          <img
+            src="../images/semantic/semantic.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/header0.png,../images/semantic/header1.png"
+                >
+                  &lt;header&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/main0.png,../images/semantic/main1.png"
+                >
+                  &lt;main&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/section0.png,../images/semantic/section1.png"
+                >
+                  &lt;section&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/article0.png,../images/semantic/article1.png"
+                >
+                  &lt;article&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/aside0.png,../images/semantic/aside1.png"
+                >
+                  &lt;aside&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/details0.png,../images/semantic/details01.jpg,../images/semantic/details1.png"
+                >
+                  &lt;details&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/data0.png,../images/semantic/data01.jpg,../images/semantic/data1.png"
+                >
+                  &lt;data&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/footer0.png,../images/semantic/footer1.png"
+                >
+                  &lt;footer&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/dialog0.png,../images/semantic/dialog01.png,../images/semantic/dialog1.png"
+                >
+                  &lt;dialog&gt; kullanımı
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="basic">
-                <img src="../images/semantic/basic.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/heading0.png,../images/semantic/heading01.jpg,../images/semantic/heading1.png'>&lt;h1&gt; to &lt;h6&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/p0.png,../images/semantic/p01.jpg,../images/semantic/p1.png'>&lt;p&gt; kullanımı</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="links">
+          <img
+            src="../images/semantic/link.png"
+            alt=""
+            width="700"
+            height="250"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/a0.png,../images/semantic/a1.png,../images/semantic/a11.png,../images/semantic/a12.png"
+                >
+                  &lt;a&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/nav0.png,../images/semantic/nav1.png"
+                >
+                  &lt;nav&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/link0.png,../images/semantic/link01.png,../images/semantic/link1.png"
+                >
+                  &lt;link&gt; kullanımı
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="semantics">
-                <img src="../images/semantic/semantic.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/header0.png,../images/semantic/header1.png'>&lt;header&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/main0.png,../images/semantic/main1.png'>&lt;main&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/section0.png,../images/semantic/section1.png'>&lt;section&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/article0.png,../images/semantic/article1.png'>&lt;article&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/aside0.png,../images/semantic/aside1.png'>&lt;aside&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/details0.png,../images/semantic/details01.jpg,../images/semantic/details1.png'>&lt;details&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/data0.png,../images/semantic/data01.jpg,../images/semantic/data1.png'>&lt;data&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/footer0.png,../images/semantic/footer1.png'>&lt;footer&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/dialog0.png,../images/semantic/dialog01.png,../images/semantic/dialog1.png'>&lt;dialog&gt; kullanımı</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="lists">
+          <img
+            src="../images/semantic/list.png"
+            alt=""
+            width="700"
+            height="400"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/ul0.png,../images/semantic/ul1.png"
+                >
+                  &lt;ul&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/ol0.png,../images/semantic/ol01.jpg,../images/semantic/ol1.png"
+                >
+                  &lt;ol&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/dl0.png,../images/semantic/dl1.png"
+                >
+                  &lt;dl&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/li0.png,../images/semantic/li1.png"
+                >
+                  &lt;li&gt; kullanımı
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="links">
-                <img src="../images/semantic/link.png" alt="" width="700" height="250" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/a0.png,../images/semantic/a1.png,../images/semantic/a11.png,../images/semantic/a12.png'>&lt;a&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/nav0.png,../images/semantic/nav1.png'>&lt;nav&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/link0.png,../images/semantic/link01.png,../images/semantic/link1.png'>&lt;link&gt; kullanımı</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="formatting">
+          <div class="figures" style="width: 700px">
+            <img
+              src="../images/semantic/formatting.png"
+              alt=""
+              width="700"
+              height="500"
+              draggable="false"
+            />
+            <img
+              src="../images/semantic/formatting2.png"
+              alt=""
+              width="700"
+              height="500"
+              draggable="false"
+            />
+            <img
+              src="../images/semantic/formatting3.png"
+              alt=""
+              width="700"
+              height="100"
+              draggable="false"
+            />
+          </div>
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/abbr0.png,../images/semantic/abbr01.jpg,../images/semantic/abbr02.jpg,../images/semantic/abbr03.jpg,../images/semantic/abbr1.png"
+                >
+                  &lt;abbr&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/address0.png,../images/semantic/address01.jpg,../images/semantic/address1.png"
+                >
+                  &lt;address&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/bdi0.png,../images/semantic/bdi01.jpg,../images/semantic/bdi1.png"
+                >
+                  &lt;bdi&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/bdo0.jpg,../images/semantic/bdo1.png"
+                >
+                  &lt;bdo&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/blockquote0.png,../images/semantic/blockquote01.jpg,../images/semantic/blockquote1.png"
+                >
+                  &lt;blockquote&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/cite0.png,../images/semantic/cite01.jpg,../images/semantic/cite1.png"
+                >
+                  &lt;cite&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/code0.png,../images/semantic/code01.jpg,../images/semantic/code1.png"
+                >
+                  &lt;code&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/del0.png,../images/semantic/del01.jpg,../images/semantic/del02.jpg,../images/semantic/del1.png"
+                >
+                  &lt;del&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/dfn0.png,../images/semantic/dfn01.jpg,../images/semantic/dfn1.png"
+                >
+                  &lt;dfn&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/em0.png,../images/semantic/em1.png"
+                >
+                  &lt;em&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/ins0.png,../images/semantic/ins1.png"
+                >
+                  &lt;ins&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/kbd0.png,../images/semantic/kbd01.jpg,../images/semantic/kbd1.png"
+                >
+                  &lt;kbd&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/mark0.png,../images/semantic/mark01.jpg,../images/semantic/mark02.jpg,../images/semantic/mark1.png"
+                >
+                  &lt;mark&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/meter0.png,../images/semantic/meter01.jpg,../images/semantic/meter1.png"
+                >
+                  &lt;meter&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/pre0.png,../images/semantic/pre01.jpg,../images/semantic/pre1.png"
+                >
+                  &lt;pre&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/progress0.png,../images/semantic/progress01.jpg,../images/semantic/progress1.png"
+                >
+                  &lt;progress&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/q0.png,../images/semantic/q01.jpg,../images/semantic/q1.png"
+                >
+                  &lt;q&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/samp0.png,../images/semantic/samp01.jpg,../images/semantic/samp1.png"
+                >
+                  &lt;samp&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/small0.png,../images/semantic/small01.jpg,../images/semantic/small1.png"
+                >
+                  &lt;small&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/strong0.png,../images/semantic/strong01.jpg,../images/semantic/strong1.png"
+                >
+                  &lt;strong&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/sub0.png,../images/semantic/sub01.jpg,../images/semantic/sub02.jpg,../images/semantic/sub1.png"
+                >
+                  &lt;sub&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/sup0.png,../images/semantic/sup01.jpg,../images/semantic/sup1.png"
+                >
+                  &lt;sup&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/time0.png,../images/semantic/time01.jpg,../images/semantic/time02.jpg,../images/semantic/time1.png"
+                >
+                  &lt;time&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/var0.png,../images/semantic/var01.jpg,../images/semantic/var1.png"
+                >
+                  &lt;var&gt; kullanımı
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="lists">
-                <img src="../images/semantic/list.png" alt="" width="700" height="400" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/ul0.png,../images/semantic/ul1.png'>&lt;ul&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/ol0.png,../images/semantic/ol01.jpg,../images/semantic/ol1.png'>&lt;ol&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/dl0.png,../images/semantic/dl1.png'>&lt;dl&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/li0.png,../images/semantic/li1.png'>&lt;li&gt; kullanımı</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="forms&input">
+          <img
+            src="../images/semantic/form.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/form0.png,../images/semantic/form01.jpg,../images/semantic/form02.jpg,../images/semantic/form1.jpg,../images/semantic/form11.jpg,../images/semantic/form12.jpg,../images/semantic/form1.png"
+                >
+                  &lt;form&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/fieldset0.png,../images/semantic/fieldset01.png,../images/semantic/fieldset1.png,../images/semantic/fieldset11.png,../images/semantic/fieldset12.png"
+                >
+                  &lt;fieldset&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/legend0.png,../images/semantic/legend1.png"
+                >
+                  &lt;legend&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/label0.png,../images/semantic/label01.jpg,../images/semantic/label1.png,../images/semantic/label11.png,../images/semantic/label12.png"
+                >
+                  &lt;label&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/input0.png,../images/semantic/input01.jpg,../images/semantic/input1.png,../images/semantic/input11.png,../images/semantic/input12.png,../images/semantic/input13.png,../images/semantic/input14.png,../images/semantic/input15.png,../images/semantic/input16.png,../images/semantic/input17.png,../images/semantic/input18.png,../images/semantic/input19.png"
+                >
+                  &lt;input&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/output0.png,../images/semantic/output01.jpg,../images/semantic/output02.jpg,../images/semantic/output1.png,../images/semantic/output11.png,../images/semantic/output12.png"
+                >
+                  &lt;output&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/select0.png,../images/semantic/select01.jpg,../images/semantic/select1.png,../images/semantic/select11.png,../images/semantic/select12.png"
+                >
+                  &lt;select&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/option0.png,../images/semantic/option1.png"
+                >
+                  &lt;option&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/optgroup0.png,../images/semantic/optgroup1.png"
+                >
+                  &lt;optgroup&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/datalist0.png,../images/semantic/datalist01.jpg,../images/semantic/datalist1.png"
+                >
+                  &lt;datalist&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/textarea0.png,../images/semantic/textarea01.jpg,../images/semantic/textarea1.png,../images/semantic/textarea11.png,../images/semantic/textarea12.png,../images/semantic/textarea13.png,../images/semantic/textarea14.png,../images/semantic/textarea15.png"
+                >
+                  &lt;textarea&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/button0.png,../images/semantic/button01.jpg,../images/semantic/button1.png,../images/semantic/button11.png,../images/semantic/button12.png,../images/semantic/button13.png,../images/semantic/button14.png,../images/semantic/button15.png,../images/semantic/button16.png,../images/semantic/button17.png"
+                >
+                  &lt;button&gt; kullanımı
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="formatting">
-                <div class="figures" style="width: 700px;">
-                    <img src="../images/semantic/formatting.png" alt="" width="700" height="500" draggable="false">
-                    <img src="../images/semantic/formatting2.png" alt="" width="700" height="500" draggable="false">
-                    <img src="../images/semantic/formatting3.png" alt="" width="700" height="100" draggable="false">
-                </div>
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/abbr0.png,../images/semantic/abbr01.jpg,../images/semantic/abbr02.jpg,../images/semantic/abbr03.jpg,../images/semantic/abbr1.png'>&lt;abbr&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/address0.png,../images/semantic/address01.jpg,../images/semantic/address1.png'>&lt;address&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/bdi0.png,../images/semantic/bdi01.jpg,../images/semantic/bdi1.png'>&lt;bdi&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/bdo0.jpg,../images/semantic/bdo1.png'>&lt;bdo&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/blockquote0.png,../images/semantic/blockquote01.jpg,../images/semantic/blockquote1.png'>&lt;blockquote&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/cite0.png,../images/semantic/cite01.jpg,../images/semantic/cite1.png'>&lt;cite&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/code0.png,../images/semantic/code01.jpg,../images/semantic/code1.png'>&lt;code&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/del0.png,../images/semantic/del01.jpg,../images/semantic/del02.jpg,../images/semantic/del1.png'>&lt;del&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/dfn0.png,../images/semantic/dfn01.jpg,../images/semantic/dfn1.png'>&lt;dfn&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/em0.png,../images/semantic/em1.png'>&lt;em&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/ins0.png,../images/semantic/ins1.png'>&lt;ins&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/kbd0.png,../images/semantic/kbd01.jpg,../images/semantic/kbd1.png'>&lt;kbd&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/mark0.png,../images/semantic/mark01.jpg,../images/semantic/mark02.jpg,../images/semantic/mark1.png'>&lt;mark&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/meter0.png,../images/semantic/meter01.jpg,../images/semantic/meter1.png'>&lt;meter&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/pre0.png,../images/semantic/pre01.jpg,../images/semantic/pre1.png'>&lt;pre&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/progress0.png,../images/semantic/progress01.jpg,../images/semantic/progress1.png'>&lt;progress&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/q0.png,../images/semantic/q01.jpg,../images/semantic/q1.png'>&lt;q&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/samp0.png,../images/semantic/samp01.jpg,../images/semantic/samp1.png'>&lt;samp&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/small0.png,../images/semantic/small01.jpg,../images/semantic/small1.png'>&lt;small&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/strong0.png,../images/semantic/strong01.jpg,../images/semantic/strong1.png'>&lt;strong&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/sub0.png,../images/semantic/sub01.jpg,../images/semantic/sub02.jpg,../images/semantic/sub1.png'>&lt;sub&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/sup0.png,../images/semantic/sup01.jpg,../images/semantic/sup1.png'>&lt;sup&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/time0.png,../images/semantic/time01.jpg,../images/semantic/time02.jpg,../images/semantic/time1.png'>&lt;time&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/var0.png,../images/semantic/var01.jpg,../images/semantic/var1.png'>&lt;var&gt; kullanımı</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="images">
+          <img
+            src="../images/semantic/image.png"
+            alt=""
+            width="700"
+            height="400"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/picture0.png,../images/semantic/picture01.jpg,../images/semantic/picture1.png"
+                >
+                  &lt;picture&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/figure0.png,../images/semantic/figure01.jpg,../images/semantic/figure1.png"
+                >
+                  &lt;figure&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/img0.png,../images/semantic/img01.jpg,../images/semantic/img02.jpg,../images/semantic/img1.png,../images/semantic/img11.png,../images/semantic/img12.png,../images/semantic/img13.png,../images/semantic/img14.png,../images/semantic/img15.png,../images/semantic/img16.png,../images/semantic/img17.png"
+                >
+                  &lt;img&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/map0.png,../images/semantic/map01.jpg,../images/semantic/map1.png"
+                >
+                  &lt;map&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/area0.png,../images/semantic/area1.png,../images/semantic/area11.png"
+                >
+                  &lt;area&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/figcaption0.png,../images/semantic/figcaption1.png"
+                >
+                  &lt;figcaption&gt; kullanımı
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="forms&input">
-                <img src="../images/semantic/form.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/form0.png,../images/semantic/form01.jpg,../images/semantic/form02.jpg,../images/semantic/form1.jpg,../images/semantic/form11.jpg,../images/semantic/form12.jpg,../images/semantic/form1.png'>&lt;form&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/fieldset0.png,../images/semantic/fieldset01.png,../images/semantic/fieldset1.png,../images/semantic/fieldset11.png,../images/semantic/fieldset12.png'>&lt;fieldset&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/legend0.png,../images/semantic/legend1.png'>&lt;legend&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/label0.png,../images/semantic/label01.jpg,../images/semantic/label1.png,../images/semantic/label11.png,../images/semantic/label12.png'>&lt;label&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/input0.png,../images/semantic/input01.jpg,../images/semantic/input1.png,../images/semantic/input11.png,../images/semantic/input12.png,../images/semantic/input13.png,../images/semantic/input14.png,../images/semantic/input15.png,../images/semantic/input16.png,../images/semantic/input17.png,../images/semantic/input18.png,../images/semantic/input19.png'>&lt;input&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/output0.png,../images/semantic/output01.jpg,../images/semantic/output02.jpg,../images/semantic/output1.png,../images/semantic/output11.png,../images/semantic/output12.png'>&lt;output&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/select0.png,../images/semantic/select01.jpg,../images/semantic/select1.png,../images/semantic/select11.png,../images/semantic/select12.png'>&lt;select&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/option0.png,../images/semantic/option1.png'>&lt;option&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/optgroup0.png,../images/semantic/optgroup1.png'>&lt;optgroup&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/datalist0.png,../images/semantic/datalist01.jpg,../images/semantic/datalist1.png'>&lt;datalist&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/textarea0.png,../images/semantic/textarea01.jpg,../images/semantic/textarea1.png,../images/semantic/textarea11.png,../images/semantic/textarea12.png,../images/semantic/textarea13.png,../images/semantic/textarea14.png,../images/semantic/textarea15.png'>&lt;textarea&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/button0.png,../images/semantic/button01.jpg,../images/semantic/button1.png,../images/semantic/button11.png,../images/semantic/button12.png,../images/semantic/button13.png,../images/semantic/button14.png,../images/semantic/button15.png,../images/semantic/button16.png,../images/semantic/button17.png'>&lt;button&gt; kullanımı</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="audio&video">
+          <img
+            src="../images/semantic/audio-video.png"
+            alt=""
+            width="700"
+            height="300"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/audio0.png,../images/semantic/audio01.jpg,../images/semantic/audio1.png"
+                >
+                  &lt;audio&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/video0.png,../images/semantic/video01.jpg,../images/semantic/video1.png,../images/semantic/video11.png"
+                >
+                  &lt;video&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/source0.png,../images/semantic/source01.png,../images/semantic/source1.png,../images/semantic/source11.png,../images/semantic/source12.png"
+                >
+                  &lt;source&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/track0.png,../images/semantic/track1.png"
+                >
+                  &lt;track&gt; kullanımı
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="images">
-                <img src="../images/semantic/image.png" alt="" width="700" height="400" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/picture0.png,../images/semantic/picture01.jpg,../images/semantic/picture1.png'>&lt;picture&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/figure0.png,../images/semantic/figure01.jpg,../images/semantic/figure1.png'>&lt;figure&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/img0.png,../images/semantic/img01.jpg,../images/semantic/img02.jpg,../images/semantic/img1.png,../images/semantic/img11.png,../images/semantic/img12.png,../images/semantic/img13.png,../images/semantic/img14.png,../images/semantic/img15.png,../images/semantic/img16.png,../images/semantic/img17.png'>&lt;img&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/map0.png,../images/semantic/map01.jpg,../images/semantic/map1.png'>&lt;map&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/area0.png,../images/semantic/area1.png,../images/semantic/area11.png'>&lt;area&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/figcaption0.png,../images/semantic/figcaption1.png'>&lt;figcaption&gt; kullanımı</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="frames">
+          <img
+            src="../images/semantic/frame.png"
+            alt=""
+            width="700"
+            height="300"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/iframe0.png,../images/semantic/iframe01.jpg,../images/semantic/iframe02.jpg,../images/semantic/iframe03.jpg,../images/semantic/iframe1.png,../images/semantic/iframe11.png,../images/semantic/iframe12.png,../images/semantic/iframe13.png"
+                >
+                  &lt;iframe&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/script0.png,../images/semantic/script01.png,../images/semantic/script1.png,../images/semantic/script11.png"
+                >
+                  &lt;script&gt; kullanımı
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/semantic/global0.png"
+                >
+                  global attributes
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </picture>
 
-            <figure id="audio&video">
-                <img src="../images/semantic/audio-video.png" alt="" width="700" height="300" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/audio0.png,../images/semantic/audio01.jpg,../images/semantic/audio1.png'>&lt;audio&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/video0.png,../images/semantic/video01.jpg,../images/semantic/video1.png,../images/semantic/video11.png'>&lt;video&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/source0.png,../images/semantic/source01.png,../images/semantic/source1.png,../images/semantic/source11.png,../images/semantic/source12.png'>&lt;source&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/track0.png,../images/semantic/track1.png'>&lt;track&gt; kullanımı</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-
-            <figure id="frames">
-                <img src="../images/semantic/frame.png" alt="" width="700" height="300" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/iframe0.png,../images/semantic/iframe01.jpg,../images/semantic/iframe02.jpg,../images/semantic/iframe03.jpg,../images/semantic/iframe1.png,../images/semantic/iframe11.png,../images/semantic/iframe12.png,../images/semantic/iframe13.png'>&lt;iframe&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/script0.png,../images/semantic/script01.png,../images/semantic/script1.png,../images/semantic/script11.png'>&lt;script&gt; kullanımı</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/semantic/global0.png'>global attributes</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-
-        </picture>
-
-        <section id="image-carousel">
-
-            <div class="container">
-                <button class="closeBtn">X</button>
-                <button class="leftBtn">&lt;</button>
-                <div class="wrapper flex">
-                    <picture class="carousel-wrapper">
-                        <figure>
-
-                        </figure>
-                        <figcaption>
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
-                        </figcaption>
-                    </picture>
-                </div>
-                <button class="rightBtn">&gt;</button>
-            </div>
-        </section>
-
+      <section id="image-carousel">
+        <div class="container">
+          <button class="closeBtn">X</button>
+          <button class="leftBtn">&lt;</button>
+          <div class="wrapper flex">
+            <picture class="carousel-wrapper">
+              <figure></figure>
+              <figcaption>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+              </figcaption>
+            </picture>
+          </div>
+          <button class="rightBtn">&gt;</button>
+        </div>
+      </section>
     </main>
+  </body>
 
-
-</body>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script  src="../script/guides.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../script/guides.js"></script>
 </html>
-

@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>NAME</title>
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLImBIFagyGDnIb0RgBj6fkdChAtKjZTQR_a78lVL1g&s" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../css/style.min.css">
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLImBIFagyGDnIb0RgBj6fkdChAtKjZTQR_a78lVL1g&s"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.min.css" />
 
-    <link rel="stylesheet" href="https://kit.fontawesome.com/b69fb5b7db.css" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/b69fb5b7db.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/b69fb5b7db.css"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b69fb5b7db.js"
+      crossorigin="anonymous"
+    ></script>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- <link rel="canonical" href="NAME">
     <meta name="description" content="NAME">
@@ -25,152 +37,428 @@
     <meta name="og" content="NAME"> -->
 
     <!-- <base href="127.0.0.1:5500/"> -->
+  </head>
 
-</head>
-
-
-    
-
-<body class="guides">
-
+  <body class="guides">
     <header>
+      <nav>
+        <select class="navBtn" name="goTo" id="goTo">
+          <option value="window">Window</option>
+          <option value="form">Form</option>
+          <option value="keyboard">Keyboard</option>
+          <option value="mouse">Mouse</option>
+          <option value="drag">Drag</option>
+          <option value="clipboard">Clipboard</option>
+          <option value="media">Media</option>
+          <option value="misc">Misc</option>
+        </select>
 
-        <nav>
-
-            <select class="navBtn" name="goTo" id="goTo">
-                    <option value="window">Window</option>
-                    <option value="form">Form</option>
-                    <option value="keyboard">Keyboard</option>
-                    <option value="mouse">Mouse</option>
-                    <option value="drag">Drag</option>
-                    <option value="clipboard">Clipboard</option>
-                    <option value="media">Media</option>
-                    <option value="misc">Misc</option>
-            </select>
-
-            <a class="navBtn" href="../index.html">Back</a>
-
-        </nav>
-
+        <a class="navBtn" href="../index.html">Back</a>
+      </nav>
     </header>
 
     <main>
+      <picture class="banner">
+        <figure id="window">
+          <img
+            src="../images/events/window.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/afterprint0.png,../images/events/afterprint01.png"
+                >
+                  afterprint
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/beforeprint0.png,../images/events/beforeprint01.png,../images/events/beforeprint02.png"
+                >
+                  beforeprint
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/beforeunload0.png,../images/events/beforeunload01.png,../images/events/beforeunload02.png"
+                >
+                  beforeunload
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/error0.png,../images/events/error01.png"
+                >
+                  error
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/hashchange0.png,../images/events/hashchange01.png,../images/events/hashchange02.png,../images/events/hashchange03.png"
+                >
+                  hashchange
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/load0.png,../images/events/load01.png,../images/events/load02.png"
+                >
+                  load
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/message0.png,../images/events/message01.png,../images/events/message02.png"
+                >
+                  message
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/offline0.png,../images/events/offline01.png"
+                >
+                  offline
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/online0.png,../images/events/online01.png"
+                >
+                  online
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/pagehide0.png,../images/events/pagehide01.png"
+                >
+                  pagehide
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/pageshow0.png,../images/events/pageshow01.png"
+                >
+                  pageshow
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/popstate0.png,../images/events/popstate01.png"
+                >
+                  popstate
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/resize0.png,../images/events/resize01.png,../images/events/resize02.png"
+                >
+                  resize
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/storage0.png,../images/events/storage01.png"
+                >
+                  storage
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/unload0.png,../images/events/unload01.png"
+                >
+                  unload
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-        <picture class="banner">
+        <figure id="form">
+          <img
+            src="../images/events/form.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/blur0.png,../images/events/blur01.png,../images/events/blur02.png"
+                >
+                  blur
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/change0.png,../images/events/change01.png,../images/events/change02.png"
+                >
+                  change
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/contextmenu0.png,../images/events/contextmenu01.png,../images/events/contextmenu02.png"
+                >
+                  contextmenu
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/focus0.png,../images/events/focus01.png,../images/events/focus02.png"
+                >
+                  focus
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/input0.png,../images/events/input01.png,../images/events/input02.png"
+                >
+                  input
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/invalid0.png,../images/events/invalid01.png,../images/events/invalid02.png"
+                >
+                  invalid
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/reset0.png,../images/events/reset01.png,../images/events/reset02.png"
+                >
+                  reset
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/search0.png,../images/events/search01.png,../images/events/search02.png"
+                >
+                  search
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/select0.png,../images/events/select01.png,../images/events/select02.png"
+                >
+                  select
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/submit0.png,../images/events/submit01.png,../images/events/submit02.png"
+                >
+                  submit
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="window">
-                <img src="../images/events/window.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/afterprint0.png,../images/events/afterprint01.png'>afterprint</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/beforeprint0.png,../images/events/beforeprint01.png,../images/events/beforeprint02.png'>beforeprint</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/beforeunload0.png,../images/events/beforeunload01.png,../images/events/beforeunload02.png'>beforeunload</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/error0.png,../images/events/error01.png'>error</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/hashchange0.png,../images/events/hashchange01.png,../images/events/hashchange02.png,../images/events/hashchange03.png'>hashchange</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/load0.png,../images/events/load01.png,../images/events/load02.png'>load</button> </li>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/message0.png,../images/events/message01.png,../images/events/message02.png'>message</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="keyboard">
+          <img
+            src="../images/events/keybord.png"
+            alt=""
+            width="700"
+            height="250"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/keydown0.png,../images/events/keydown01.png,../images/events/keydown02.png"
+                >
+                  keydown
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/keyup0.png,../images/events/keyup01.png,../images/events/keyup02.png"
+                >
+                  keyup
+                </button>
+              </li>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/keypress0.png,../images/events/keypress01.png,../images/events/keypress02.png"
+                >
+                  keypress
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="form">
-                <img src="../images/events/form.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/HERE.png'>HERE</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="mouse">
+          <img
+            src="../images/events/mouse.png"
+            alt=""
+            width="700"
+            height="400"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/HERE.png"
+                >
+                  HERE
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="keyboard">
-                <img src="../images/events/keybord.png" alt="" width="700" height="250" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/HERE.png'>HERE</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="drag">
+          <div class="figures" style="width: 700px">
+            <img
+              src="../images/events/drag.png"
+              alt=""
+              width="700"
+              height="500"
+              draggable="false"
+            />
+          </div>
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/HERE.png"
+                >
+                  HERE
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="mouse">
-                <img src="../images/events/mouse.png" alt="" width="700" height="400" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/HERE.png'>HERE</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="clipboard">
+          <img
+            src="../images/events/clipboard.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/HERE.png"
+                >
+                  HERE
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="drag">
-                <div class="figures" style="width: 700px;">
-                    <img src="../images/events/drag.png" alt="" width="700" height="500" draggable="false">
-                </div>
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/HERE.png'>HERE</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="media">
+          <img
+            src="../images/events/media.png"
+            alt=""
+            width="900"
+            height="800"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/HERE.png"
+                >
+                  HERE
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
 
-            <figure id="clipboard">
-                <img src="../images/events/clipboard.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/HERE.png'>HERE</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
+        <figure id="misc">
+          <img
+            src="../images/events/misc.png"
+            alt=""
+            width="700"
+            height="300"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/events/HERE.png"
+                >
+                  HERE
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </picture>
 
-            <figure id="media">
-                <img src="../images/events/media.png" alt="" width="900" height="800" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/HERE.png'>HERE</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-
-            <figure id="misc">
-                <img src="../images/events/misc.png" alt="" width="700" height="300" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/events/HERE.png'>HERE</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-
-        </picture>
-
-        <section id="image-carousel">
-
-            <div class="container">
-                <button class="closeBtn">X</button>
-                <button class="leftBtn">&lt;</button>
-                <div class="wrapper flex">
-                    <picture class="carousel-wrapper">
-                        <figure>
-
-                        </figure>
-                        <figcaption>
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
-                        </figcaption>
-                    </picture>
-                </div>
-                <button class="rightBtn">&gt;</button>
-            </div>
-        </section>
-
+      <section id="image-carousel">
+        <div class="container">
+          <button class="closeBtn">X</button>
+          <button class="leftBtn">&lt;</button>
+          <div class="wrapper flex">
+            <picture class="carousel-wrapper">
+              <figure></figure>
+              <figcaption>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+              </figcaption>
+            </picture>
+          </div>
+          <button class="rightBtn">&gt;</button>
+        </div>
+      </section>
     </main>
+  </body>
 
-
-</body>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script  src="../script/guides.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../script/guides.js"></script>
 </html>
-
