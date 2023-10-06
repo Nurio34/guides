@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>NAME</title>
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLImBIFagyGDnIb0RgBj6fkdChAtKjZTQR_a78lVL1g&s" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../css/style.min.css">
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLImBIFagyGDnIb0RgBj6fkdChAtKjZTQR_a78lVL1g&s"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.min.css" />
 
-    <link rel="stylesheet" href="https://kit.fontawesome.com/b69fb5b7db.css" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/b69fb5b7db.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/b69fb5b7db.css"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b69fb5b7db.js"
+      crossorigin="anonymous"
+    ></script>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- <link rel="canonical" href="NAME">
     <meta name="description" content="NAME">
@@ -25,206 +37,395 @@
     <meta name="og" content="NAME"> -->
 
     <!-- <base href="127.0.0.1:5500/"> -->
+  </head>
 
-</head>
-
-
-    
-
-<body class="guides">
-
+  <body class="guides">
     <header>
+      <nav>
+        <select class="navBtn" name="goTo" id="goTo">
+          <option value="basic">Basic</option>
+          <option value="touch">$ git touch</option>
+          <option value="init">$ git init</option>
+          <option value="config">$ git config</option>
+          <option value="add">$ git add</option>
+          <option value="status">$ git status</option>
+          <option value="remove">$ git remove</option>
+          <option value="commit">$ git commit</option>
+          <option value="gitignore">$ git gitignore</option>
+          <option value="branch">$ git branch</option>
+          <option value="merge">$ git merge</option>
+          <option value="remote">$ git remote</option>
+          <option value="push">$ git push</option>
+          <option value="clone">$ git clone</option>
+          <option value="pull">$ git pull</option>
+          <option value="help">$ git help</option>
+        </select>
 
-        <nav>
-
-            <select class="navBtn" name="goTo" id="goTo">
-                    <option value="basic">Basic</option>
-                    <option value="touch">$ git touch</option>
-                    <option value="init">$ git init</option>
-                    <option value="config">$ git config</option>
-                    <option value="add">$ git add</option>
-                    <option value="status">$ git status</option>
-                    <option value="remove">$ git remove</option>
-                    <option value="commit">$ git commit</option>
-                    <option value="gitignore">$ git gitignore</option>
-                    <option value="branch">$ git branch</option>
-                    <option value="merge">$ git merge</option>
-                    <option value="remote">$ git remote</option>
-                    <option value="push">$ git push</option>
-                    <option value="clone">$ git clone</option>
-                    <option value="pull">$ git pull</option>
-                    <option value="help">$ git help</option>
-            </select>
-
-            <a class="navBtn" href="../index.html">Back</a>
-
-        </nav>
-
+        <a class="navBtn" href="../..//index.html">Back</a>
+      </nav>
     </header>
 
     <main>
+      <picture class="banner">
+        <figure id="basic">
+          <img
+            src="../images/git/basic.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/basic0.jpg,../images/git/basic01.webp"
+                >
+                  $ git Basic
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="touch">
+          <img
+            src="../images/git/touch.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/touch0.jpg"
+                >
+                  $ git touch
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="init">
+          <img
+            src="../images/git/init.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/init0.jpg,../images/git/init01.jpg"
+                >
+                  $ git init
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="config">
+          <img
+            src="../images/git/config.jpg"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/config0.jpg"
+                >
+                  $ git config
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="add">
+          <img
+            src="../images/git/add.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/add0.jpg,../images/git/add01.jpg,../images/git/add02.jpg"
+                >
+                  $ git add
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="status">
+          <img
+            src="../images/git/status.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/status0.jpg"
+                >
+                  $ git status
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="remove">
+          <img
+            src="../images/git/remove.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/remove0.jpg"
+                >
+                  $ git remove
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="commit">
+          <img
+            src="../images/git/commit.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/commit0.jpg,../images/git/commit01.jpg,../images/git/commit02.jpg,../images/git/commit03.jpg,../images/git/commit04.png,../images/git/commit05.png"
+                >
+                  $ git commit
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="gitignore">
+          <img
+            src="../images/git/gitignore.webp"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/gitignore0.jpg,../images/git/gitignore01.jpg,../images/git/gitignore02.jpg"
+                >
+                  $ git gitignore
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="branch">
+          <img
+            src="../images/git/branch.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/branch0.jpg,../images/git/branch01.jpg,../images/git/branch02.png,../images/git/branch03.png"
+                >
+                  $ git branch
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="merge">
+          <img
+            src="../images/git/merge.webp"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/merge0.jpg,../images/git/merge01.png"
+                >
+                  $ git merge
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="remote">
+          <img
+            src="../images/git/remote.jpg"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/remote0.jpg,../images/git/remote01.jpg,../images/git/remote02.jpg,../images/git/remote03.jpg"
+                >
+                  $ git remote
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="push">
+          <img
+            src="../images/git/push.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/push0.jpg,../images/git/push01.jpg,../images/git/push02.jpg,../images/git/push03.jpg,../images/git/push04.jpg,../images/git/push05.png,../images/git/push06.png"
+                >
+                  $ git push
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="clone">
+          <img
+            src="../images/git/clone.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/clone0.jpg,../images/git/clone01.jpg,../images/git/clone02.jpg"
+                >
+                  $ git clone
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="pull">
+          <img
+            src="../images/git/pull.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/pull0.jpg,../images/git/pull01.png"
+                >
+                  $ git pull
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure id="help">
+          <img
+            src="../images/git/help.png"
+            alt=""
+            width="700"
+            height="500"
+            draggable="false"
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <button
+                  class="infoImgsBtn"
+                  data-imgs="../images/git/help0.png,../images/git/help01.png,../images/git/help02.png,../images/git/help03.png,../images/git/help04.png,../images/git/help05.png,../images/git/help06.png,../images/git/help07.png,../images/git/help08.png"
+                >
+                  $ git help
+                </button>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </picture>
 
-        <picture class="banner">
-            <figure id="basic">
-                <img src="../images/git/basic.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/basic0.jpg,../images/git/basic01.webp'>$ git Basic</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="touch">
-                <img src="../images/git/touch.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/touch0.jpg'>$ git touch</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="init">
-                <img src="../images/git/init.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/init0.jpg,../images/git/init01.jpg'>$ git init</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="config">
-                <img src="../images/git/config.jpg" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/config0.jpg'>$ git config</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="add">
-                <img src="../images/git/add.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/add0.jpg,../images/git/add01.jpg,../images/git/add02.jpg'>$ git add</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="status">
-                <img src="../images/git/status.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/status0.jpg'>$ git status</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="remove">
-                <img src="../images/git/remove.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/remove0.jpg'>$ git remove</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="commit">
-                <img src="../images/git/commit.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/commit0.jpg,../images/git/commit01.jpg,../images/git/commit02.jpg,../images/git/commit03.jpg,../images/git/commit04.png,../images/git/commit05.png'>$ git commit</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="gitignore">
-                <img src="../images/git/gitignore.webp" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/gitignore0.jpg,../images/git/gitignore01.jpg,../images/git/gitignore02.jpg'>$ git gitignore</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="branch">
-                <img src="../images/git/branch.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/branch0.jpg,../images/git/branch01.jpg,../images/git/branch02.png,../images/git/branch03.png'>$ git branch</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="merge">
-                <img src="../images/git/merge.webp" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/merge0.jpg,../images/git/merge01.png'>$ git merge</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="remote">
-                <img src="../images/git/remote.jpg" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/remote0.jpg,../images/git/remote01.jpg,../images/git/remote02.jpg,../images/git/remote03.jpg'>$ git remote</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="push">
-                <img src="../images/git/push.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/push0.jpg,../images/git/push01.jpg,../images/git/push02.jpg,../images/git/push03.jpg,../images/git/push04.jpg,../images/git/push05.png,../images/git/push06.png'>$ git push</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="clone">
-                <img src="../images/git/clone.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/clone0.jpg,../images/git/clone01.jpg,../images/git/clone02.jpg'>$ git clone</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="pull">
-                <img src="../images/git/pull.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/pull0.jpg,../images/git/pull01.png'>$ git pull</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-            <figure id="help">
-                <img src="../images/git/help.png" alt="" width="700" height="500" draggable="false">
-                <figcaption>
-                    <ul>
-                        <li><button class="infoImgsBtn" data-imgs='../images/git/help0.png,../images/git/help01.png,../images/git/help02.png,../images/git/help03.png,../images/git/help04.png,../images/git/help05.png,../images/git/help06.png,../images/git/help07.png,../images/git/help08.png'>$ git help</button> </li>
-                    </ul>
-                </figcaption>
-            </figure>
-        </picture>
-
-         <section id="image-carousel">
-
-            <div class="container">
-                <button class="closeBtn">X</button>
-                <button class="leftBtn">&lt;</button>
-                <div class="wrapper flex">
-                    <picture class="carousel-wrapper">
-                        <figure>
-
-                        </figure>
-                        <figcaption>
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
-                        </figcaption>
-                    </picture>
-                </div>
-                <button class="rightBtn">&gt;</button>
-            </div>
-        </section>
-
+      <section id="image-carousel">
+        <div class="container">
+          <button class="closeBtn">X</button>
+          <button class="leftBtn">&lt;</button>
+          <div class="wrapper flex">
+            <picture class="carousel-wrapper">
+              <figure></figure>
+              <figcaption>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+              </figcaption>
+            </picture>
+          </div>
+          <button class="rightBtn">&gt;</button>
+        </div>
+      </section>
     </main>
+  </body>
 
-</body>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script  src="../script/guides.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../script/guides.js"></script>
 </html>
-
