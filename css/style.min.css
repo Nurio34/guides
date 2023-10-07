@@ -306,8 +306,9 @@ body.guides main picture.banner figure figcaption ul {
 }
 body.guides main picture.banner figure figcaption ul li button.infoImgsBtn {
   padding: 0.2rem 0.4rem;
-  color: greenyellow;
-  background-color: black;
+  color: black;
+  background-color: red;
+  font-weight: 600;
   cursor: pointer;
 }
 body.guides main picture.banner figure figcaption ul li button.infoImgsBtn.clicked {
@@ -317,6 +318,12 @@ body.guides main picture.banner figure figcaption ul li button.infoImgsBtn.click
 body.guides main picture.banner figure figcaption ul li button.infoImgsBtn.active {
   color: purple;
   background-color: lightgray;
+}
+
+body.guides main picture.banner figure figcaption ul li button.infoImgsBtn.tested {
+  color: white;
+  background-color: green;
+  font-weight: 500;
 }
 body.guides main #image-carousel {
   position: fixed;
