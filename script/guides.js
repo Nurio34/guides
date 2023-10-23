@@ -118,8 +118,19 @@ function adjustCircles(iconEls,count) {
     iconEls.forEach(icon=>icon.className = "fa-regular fa-circle")
     iconEls[count].className = "fa-solid fa-circle active"
 }
-    
 
+const backBtn = document.querySelector("#backBtn")
+const basicEl = document.querySelector("#basic")
 
+    backBtn.ondragstart = e => {
+        e.preventDefault()
+        e.dataTransfer.setData("text", e.target.id)
+    }
 
+    basicEl.ondrop = e => {
+
+        e.preventDefault()
+        const data = e.dataTransfer.getData("text")
+        e.target.appendChild(getElementBtId(data))
+    }
 
